@@ -58,7 +58,7 @@
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(299, 90);
+            groupBox1.Location = new Point(299, 108);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(0);
             groupBox1.Size = new Size(255, 327);
@@ -110,6 +110,7 @@
             button1.TabIndex = 1;
             button1.Text = "REGISTER";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox3
             // 
@@ -166,7 +167,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(852, 511);
+            ClientSize = new Size(836, 573);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";

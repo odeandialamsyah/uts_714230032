@@ -26,7 +26,7 @@ namespace uts_714230032
         private void InitializeMongoDB()
         {
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("user");
+            var database = client.GetDatabase("uts");
             _userCollection = database.GetCollection<BsonDocument>("user");
         }
 

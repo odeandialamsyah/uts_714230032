@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBox1 = new GroupBox();
             label4 = new Label();
@@ -37,6 +38,7 @@
             label3 = new Label();
             textBox2 = new TextBox();
             label2 = new Label();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(290, 112);
+            groupBox1.Location = new Point(290, 114);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(0);
             groupBox1.Size = new Size(255, 272);
@@ -124,13 +126,18 @@
             label2.TabIndex = 2;
             label2.Text = "EMAIL";
             // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(852, 511);
+            ClientSize = new Size(836, 573);
             ControlBox = false;
             Controls.Add(groupBox1);
             DoubleBuffered = true;
@@ -152,5 +159,6 @@
         private LinkLabel linkLabel1;
         private Button button1;
         private Label label4;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }
